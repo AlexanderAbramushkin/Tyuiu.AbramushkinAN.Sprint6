@@ -23,33 +23,30 @@ namespace Tyuiu.AbramushkinAN.Sprint6.Task2.V20
         {
             try
             {
-                int startStep = Convert.ToInt32(TextBoxInputStartStep_AAN);
-                int stopStep = Convert.ToInt32(TextBoxInputStopStep_AAN);
+                int startStep = Convert.ToInt32(TextBoxInputStartStep_AAN.Text);
+                int stopStep = Convert.ToInt32(TextBoxInputStopStep_AAN.Text);
 
-
-                int len = ds.GetMassFunction(startStep, stopStep).Length;
-
-                double[] valueArray = new double[len];
-                valueArray = ds.GetMassFunction(startStep, stopStep);
+                double[] valueArray = ds.GetMassFunction(startStep, stopStep);
+                int index = 0;
 
                 this.ChartFunction_AAN.Titles.Add("График функции");
                 this.ChartFunction_AAN.ChartAreas[0].AxisX.Title = "Ось X";
                 this.ChartFunction_AAN.ChartAreas[0].AxisY.Title = "Ось Y";
-
-                for (int i = 0; i <= len - 1; i++)
+                for (int i = startStep; i <= stopStep; i++)
                 {
-                    this.dataGridViewFunction_AAN.Rows.Add(Convert.ToString(startStep), Convert.ToString(valueArray[i]));
+                    
+                    this.dataGridViewFunction_AAN.Rows.Add(i, valueArray[index]);
 
-                    this.ChartFunction_AAN.Series[0].Points.AddXY(startStep, valueArray[i]);
-
-                    startStep++;
+                    this.ChartFunction_AAN.Series[0].Points.AddXY(i, valueArray[index]);
+                    index++;
                 }
             }
             catch
             {
-                MessageBox.Show("Введены некорректные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Введены некорректные данные","Ошибка",MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
         private void ButtonHelp(object sender, EventArgs e)
         {
             MessageBox.Show("Таск 2 выполнил студент группы ИИПб-24-2 Абрамушкин Александр Николаевич");

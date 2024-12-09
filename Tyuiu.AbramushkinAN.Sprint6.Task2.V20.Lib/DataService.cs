@@ -9,7 +9,7 @@ namespace Tyuiu.AbramushkinAN.Sprint6.Task2.V20.Lib
             int len = (stopValue - startValue) + 1;
 
             double[] Array = new double[len];
-            double ResOfFunc = 0;
+            double ResOfFunc;
             int count = 0;
             for (int x = startValue; x <= stopValue; x++)
             {
