@@ -11,8 +11,7 @@ namespace Tyuiu.AbramushkinAN.Sprint6.Task6.V11.Test
             DataService ds = new DataService();
             string wait = "btwMCZUcBPADUsjhluJmjQKHdTMRyztkPxzEVkcarVMlQEUWCvEgL";
             string path = @"C:\Users\User\Desktop\DataSprint6\InPutDataFileTask6V11.txt";
-            string str = "";
-            Assert.AreEqual(wait, ds.CollectTextFromFile(str, path));
+            Assert.AreEqual(wait, ds.CollectTextFromFile(path));
         }
     }
 }
