@@ -14,6 +14,10 @@ namespace Tyuiu.AbramushkinAN.Sprint6.Task6.V11.Lib
                 while ((line = sr.ReadLine()) != null)
                 {
                     string[] array = line.Split(" ");
+                    if (array[0] == "")
+                    {
+                        break;
+                    }
                     Array.Reverse(array);
                     resstr += array[1];
                 }
