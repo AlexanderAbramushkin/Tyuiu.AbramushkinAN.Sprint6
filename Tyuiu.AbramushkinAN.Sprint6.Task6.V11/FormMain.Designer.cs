@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.AbramushkinAN.Sprint6.Task6.V11
 {
-    partial class Form1
+    partial class FormMain_AAN
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,10 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            SuspendLayout();
+            // 
+            // FormMain_AAN
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Name = "FormMain_AAN";
+            Text = "Спринт 6 | Таск 6 | Вариант 11 | Абрамушкин А.Н.";
+            ResumeLayout(false);
         }
 
         #endregion
