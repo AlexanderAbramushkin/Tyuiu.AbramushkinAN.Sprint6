@@ -19,12 +19,12 @@ namespace Tyuiu.AbramushkinAN.Sprint6.Task6.V11.Lib
                         break;
                     }
                     Array.Reverse(array);
-                    resstr += array[1];
+                        resstr += array[1];
                 }
 
             }
 
-            return resstr;
+            return resstr.Trim();
         }
 
     }
