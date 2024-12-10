@@ -4,7 +4,7 @@ namespace Tyuiu.AbramushkinAN.Sprint6.Task6.V11.Lib
 {
     public class DataService : ISprint6Task6V11
     {
-        public string CollectTextFromFile(string str, string path)
+        public string CollectTextFromFile(string path)
         {
             string resstr = "";
 
@@ -22,5 +22,6 @@ namespace Tyuiu.AbramushkinAN.Sprint6.Task6.V11.Lib
 
             return resstr;
         }
+
     }
 }
