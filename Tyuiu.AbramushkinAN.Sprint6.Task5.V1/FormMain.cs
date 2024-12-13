@@ -10,7 +10,7 @@ namespace Tyuiu.AbramushkinAN.Sprint6.Task5.V1
         }
         DataService ds = new DataService();
 
-        string path = @"C:\Users\User\Desktop\DataSprint6\InPutDataFileTask5V1.txt";
+        string path = @"C:\Users\User\source\repos\Tyuiu.AbramushkinAN.Sprint6\DataSprint6\InPutDataFileTask5V1.txt";
         private void buttonDone_AAN_Click(object sender, EventArgs e)
         {
             try
