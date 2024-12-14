@@ -16,5 +16,10 @@ namespace Tyuiu.AbramushkinAN.Sprint6.Task7.V1
         {
             InitializeComponent();
         }
+
+        private void buttonOK_AAN_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
