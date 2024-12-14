@@ -17,7 +17,7 @@ namespace Tyuiu.AbramushkinAN.Sprint6.Task7.V1
         DataService ds = new DataService();
         static int columns;
         static int rows;
-        string openFilePath = "";
+        static string openFilePath = "";
         public static int[,] LoadFromDataFile(string filePath)
         {
             string fileData = File.ReadAllText(filePath);
@@ -95,7 +95,7 @@ namespace Tyuiu.AbramushkinAN.Sprint6.Task7.V1
         private void buttonOpenFile_Click(object sender, EventArgs e)
         {
             openFileDialogTask_AAN.ShowDialog();
-            string openFilePath = openFileDialogTask_AAN.FileName;
+            openFilePath = openFileDialogTask_AAN.FileName;
 
             int[,] arrayValues = new int[rows,columns];
 
